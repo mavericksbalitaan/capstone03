@@ -22,6 +22,7 @@ function Preview({ pokemon }) {
         <h1>
           {pokemon.id < 10 ? (`0${pokemon.id}`) : pokemon.id}
         </h1>
+        <img className="pokeball" src={pokeball} alt="" />
         <img src={img} alt="" />
         <h2>
           {Capitalize(pokemon.name)}
