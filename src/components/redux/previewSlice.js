@@ -17,7 +17,6 @@ export const fetchData = createAsyncThunk(
   'preview/fetchData',
   async (input) => {
     const response = await axios.get(input);
-    console.log(response.data);
     return response.data;
   },
 );
@@ -36,17 +35,6 @@ const previewSlice = createSlice({
       return pokemons;
     });
   },
-  // {
-  //   [fetchApi.fulfilled]: (state, action) => {
-  //     const pokemons = action.payload.results.map((el, index) => ({
-  //       id: index + 1,
-  //       name: el.name,
-  //       url: el.url,
-  //       img: '',
-  //     }));
-  //     return pokemons;
-  //   },
-  // },
 });
 
 export default previewSlice.reducer;
