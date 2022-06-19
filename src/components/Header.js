@@ -14,7 +14,7 @@ function Header() {
   };
 
   const searchHandler = () => {
-    if (!input) return;
+    if (input > 898) return;
     navigate(`/pokemon/details/${input}`);
   };
 
