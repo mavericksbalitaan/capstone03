@@ -25,22 +25,28 @@ export const fetchData = createAsyncThunk(
 const previewSlice = createSlice({
   name: 'preview',
   initialState,
-  extraReducers: {
-    [fetchApi.fulfilled]: (state, action) => {
+  extraReducers: (builder) => {
+    builder.addCase(fetchApi.fulfilled, (state, action) => {
       const pokemons = action.payload.results.map((el, index) => ({
         id: index + 1,
         name: el.name,
         url: el.url,
+        img: '',
       }));
-      // pokemons.map((el) => fetchData(el.url));
-      // const pokemon = pokemons.map((el) => (
-      //   fetchData(el.url)
-      // ));
-      // fetchData(el.url);
-      // console.log(pokemons);
       return pokemons;
-    },
+    });
   },
+  // {
+  //   [fetchApi.fulfilled]: (state, action) => {
+  //     const pokemons = action.payload.results.map((el, index) => ({
+  //       id: index + 1,
+  //       name: el.name,
+  //       url: el.url,
+  //       img: '',
+  //     }));
+  //     return pokemons;
+  //   },
+  // },
 });
 
 export default previewSlice.reducer;
