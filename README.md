@@ -1,5 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a08ab01-f089-4f3c-acb4-ef195a769739/deploy-status)](https://app.netlify.com/sites/app-pokemon-webapp/deploys)
+
 # METRICS WEB APP
 
 ## *Microverse React Capstone Project*
@@ -37,9 +39,9 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku]()👈
+Check the live demo [heroku](https://app-pokemon-webapp.herokuapp.com/)👈
 
-Check the live demo [netlify]()👈
+Check the live demo [netlify](https://app-pokemon-webapp.netlify.app/)👈
 
 ## Getting Started
 
