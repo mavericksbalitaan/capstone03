@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# METRICS WEB APP
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a08ab01-f089-4f3c-acb4-ef195a769739/deploy-status)](https://app.netlify.com/sites/app-pokemon-webapp/deploys)
+
+# POKEMON WEB APP
 
 ## *Microverse React Capstone Project*
 
@@ -22,6 +24,9 @@
 - [x] Apply React best practices and language style guides in code.
 - [x] Use store, actions and reducers in React.
 
+## Project Documentation 📄
+- [x] Here is the presentation video [link](https://drive.google.com/file/d/1TOnf7yuGItQzSfxj6WnMh_dTBKG_8qoI/view?usp=sharing)👈
+
 ## Built With 🛠️
 
 - [x] Languages: HTML, Sass and JavaScript
@@ -37,9 +42,9 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku]()👈
+Check the live demo [heroku](https://app-pokemon-webapp.herokuapp.com/)👈
 
-Check the live demo [netlify]()👈
+Check the live demo [netlify](https://app-pokemon-webapp.netlify.app/)👈
 
 ## Getting Started
 
