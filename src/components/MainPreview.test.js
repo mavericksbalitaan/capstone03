@@ -2,35 +2,27 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import Preview from './Preview';
+import MainPreview from './MainPreview';
 import store from './redux/configureStore';
 
-const MockPreview = () => (
+const MockMainPreview = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <Preview pokemon={{ id: '1', name: 'bulbasaur' }} />
+      <MainPreview pokemon={{ id: '1', name: 'bulbasaur' }} />
     </BrowserRouter>
   </Provider>
 );
 
-describe('Test the Preview component', () => {
+describe('Test the MainPreview component', () => {
   test('renders correctly', () => {
-    const tree = renderer.create(<MockPreview />).toJSON();
+    const tree = renderer.create(<MockMainPreview />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  test('renders link', () => {
-    render(<MockPreview />);
-    const linkElement = screen.getByRole('link', {
-      name: /01 bulbasaur/i,
-    });
-    expect(linkElement).toBeInTheDocument();
-  });
-
   test('renders heading', () => {
-    render(<MockPreview />);
+    render(<MockMainPreview />);
     const headingElement = screen.getByRole('heading', {
-      name: /bulbasaur/i,
+      name: /who's that pokemon\?/i,
     });
     expect(headingElement).toBeInTheDocument();
   });
