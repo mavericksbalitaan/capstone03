@@ -13,7 +13,7 @@ const MockFooter = () => (
   </Provider>
 );
 
-describe('Test the footer component', () => {
+describe('Test the Footer component', () => {
   test('renders correctly', () => {
     const tree = renderer.create(<MockFooter />).toJSON();
     expect(tree).toMatchSnapshot();

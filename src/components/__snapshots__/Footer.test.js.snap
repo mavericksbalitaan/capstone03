@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the footer component renders correctly 1`] = `
+exports[`Test the Footer component renders correctly 1`] = `
 <section
   className="details"
 >
