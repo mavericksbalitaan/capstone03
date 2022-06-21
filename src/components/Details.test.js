@@ -1,3 +1,5 @@
+import { render, screen } from '@testing-library/react';
+// import userEvent from '@testing-library/user-event';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -12,9 +14,25 @@ const MockDetails = () => (
   </Provider>
 );
 
-test('renders correctly', () => {
-  const tree = renderer
-    .create(<MockDetails />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+describe('Test the Details component', () => {
+  test('renders correctly', () => {
+    const tree = renderer.create(<MockDetails />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('renders link', () => {
+    render(<MockDetails />);
+    const buttonElement = screen.getByRole('button', {
+      name: /more details\.\.\./i,
+    });
+    expect(buttonElement).toBeInTheDocument();
+  });
 });
+
+// test('renders link', () => {
+//   render(<MockDetails />);
+//   userEvent.screen.getByRole('button', {
+//     name: /more details\.\.\./i
+//   });
+//   expect(screen.getByRole('button')).toBeInTheDocument();
+// });

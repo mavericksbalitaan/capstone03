@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import renderer from 'react-test-renderer';
+// import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './redux/configureStore';
@@ -43,16 +44,22 @@ describe('Check if Home Component renders correctly', () => {
     });
     expect(headingElement).toBeInTheDocument();
   });
+
+  test('renders correctly', () => {
+    const tree = renderer.create(<MockHome />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 // describe('Check if Details Component renders correctly', () => {
 //   test('renders heading', async () => {
+//     jest.mock('./__mocks__/api.js');
 //     render(<MockHome />);
 //     userEvent.click(screen.getByRole('link', {
 //       name: /01 bulbasaur/i,
 //     }));
-//     expect(screen.getByRole('heading', {
+//     await expect(screen.getByRole('heading', {
 //       name: /bulbasaur/i,
-//     })).toBeInTheDocument();
+//     })).resolves.toBeVisible();
 //   });
 // });

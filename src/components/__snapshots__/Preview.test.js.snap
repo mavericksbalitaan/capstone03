@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Preview component renders correctly 1`] = `
+<a
+  className="box"
+  href="/pokemon/details/1"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "hsl(219,45%,49%)",
+    }
+  }
+>
+  <div
+    className="oval"
+  >
+    <h1>
+      01
+    </h1>
+    <img
+      alt=""
+      src="pokeball.png"
+    />
+    <h2>
+      BULBASAUR
+    </h2>
+  </div>
+</a>
+`;
