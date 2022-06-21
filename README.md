@@ -36,6 +36,7 @@
 - [x] Code Editor: VS Code
 
 ## Website Mockup 📱 💻 🖥️
+![app_screenshot](https://user-images.githubusercontent.com/98527559/174745820-96c22472-4f76-4915-bae8-3e9e30b3b5bf.png)
 
 ## Screenshots 📸
 Screenshots can be found in the repository.
