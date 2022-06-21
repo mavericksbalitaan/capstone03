@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './redux/configureStore';
@@ -43,3 +44,15 @@ describe('Check if Home Component renders correctly', () => {
     expect(headingElement).toBeInTheDocument();
   });
 });
+
+// describe('Check if Details Component renders correctly', () => {
+//   test('renders heading', async () => {
+//     render(<MockHome />);
+//     userEvent.click(screen.getByRole('link', {
+//       name: /01 bulbasaur/i,
+//     }));
+//     expect(screen.getByRole('heading', {
+//       name: /bulbasaur/i,
+//     })).toBeInTheDocument();
+//   });
+// });
