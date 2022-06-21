@@ -58,7 +58,7 @@ function Header() {
       <section className="header">
         <div className="title">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <h1 className="titleText">POKEMON</h1>
+            <h1 className="titleText" data-testid="title">POKEMON</h1>
           </Link>
           <img className="logo" src={img} alt="" onMouseEnter={() => setShown(true)} onMouseLeave={() => setShown(false)} />
           {shown && <p>{name}</p>}
@@ -102,7 +102,7 @@ function Header() {
                   <MdKeyboardVoice />
                 </IconContext.Provider>
               </button>
-              <button type="button" onClick={() => setHidden(true)}>
+              <button type="button" data-testid="searchIcon" onClick={() => setHidden(true)}>
                 <IconContext.Provider value={{ className: 'ball' }}>
                   <BsSearch />
                 </IconContext.Provider>

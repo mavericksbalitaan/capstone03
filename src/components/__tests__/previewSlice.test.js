@@ -1,4 +1,4 @@
-import previewSlice, { updateImg } from './previewSlice';
+import previewSlice, { updateImg } from '../redux/previewSlice';
 
 describe('Test the functionality of the previewSlice', () => {
   test('Test the functionality of the updateImg action type', () => {

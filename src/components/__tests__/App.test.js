@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import store from './components/redux/configureStore';
-import App from './App';
+import store from '../redux/configureStore';
+import App from '../../App';
 
 const MockApp = () => (
   <Provider store={store}>

@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import Footer from './Footer';
-import store from './redux/configureStore';
+import Footer from '../Footer';
+import store from '../redux/configureStore';
 
 const MockFooter = () => (
   <Provider store={store}>

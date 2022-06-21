@@ -19,6 +19,7 @@ Array [
       >
         <h1
           className="titleText"
+          data-testid="title"
         >
           POKEMON
         </h1>
@@ -91,6 +92,7 @@ Array [
         </svg>
       </button>
       <button
+        data-testid="searchIcon"
         onClick={[Function]}
         type="button"
       >
