@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './components/redux/configureStore';
-import renderer from 'react-test-renderer';
 import App from './App';
 
 const MockApp = () => (
@@ -31,7 +30,7 @@ describe('Check if App Component renders correctly', () => {
   test('renders button', () => {
     render(<MockApp />);
     const buttonElement = screen.getByRole('button', {
-      name: /check answer/i
+      name: /check answer/i,
     });
     expect(buttonElement).toBeInTheDocument();
   });
@@ -39,7 +38,7 @@ describe('Check if App Component renders correctly', () => {
   test('renders heading', () => {
     render(<MockApp />);
     const headingElement = screen.getByRole('heading', {
-      name: /pokemon by id/i
+      name: /pokemon by id/i,
     });
     expect(headingElement).toBeInTheDocument();
   });
