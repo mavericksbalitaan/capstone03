@@ -127,6 +127,11 @@ Give a ⭐️ if you like this project!
 
 - [Microverse](https://www.microverse.org/)
 - Code Reviewers
+- Original design idea by [Nelson Sakwa in Behance](https://www.behance.net/sakwadesignstudio)
+  ![Designer_Cindy_Shin](https://user-images.githubusercontent.com/98527559/162937760-e8f46c98-e5b0-4a56-b268-4bb0cb6a61b9.png)
+
+- under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
+  ![License_Creative_Commons](https://user-images.githubusercontent.com/98527559/162938258-ca5c702c-41a6-4364-adc2-20d4bc10c27e.png)
 
 ## 📝 License
 
