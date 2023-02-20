@@ -1,7 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9a08ab01-f089-4f3c-acb4-ef195a769739/deploy-status)](https://app.netlify.com/sites/app-pokemon-webapp/deploys)
-
 ![pokemonLogo](https://user-images.githubusercontent.com/98527559/174758098-53262c7f-b215-42e5-b984-5d20ddd7d0d1.png)
 
 # POKEMON WEB APP
@@ -45,9 +43,7 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [heroku](https://app-pokemon-webapp.herokuapp.com/)👈
-
-Check the live demo [netlify](https://app-pokemon-webapp.netlify.app/)👈
+Check the live demo [here](https://pokemon-app-omega-liart.vercel.app/)👈
 
 ## Getting Started
 
