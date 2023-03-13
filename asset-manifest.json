@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/capstone03/static/css/main.01f3548e.css",
+    "main.js": "/capstone03/static/js/main.e692f9cb.js",
+    "static/js/787.ebb2f4b9.chunk.js": "/capstone03/static/js/787.ebb2f4b9.chunk.js",
+    "static/media/pokeball.png": "/capstone03/static/media/pokeball.e50c0c448f99e9ab1836.png",
+    "index.html": "/capstone03/index.html",
+    "main.01f3548e.css.map": "/capstone03/static/css/main.01f3548e.css.map",
+    "main.e692f9cb.js.map": "/capstone03/static/js/main.e692f9cb.js.map",
+    "787.ebb2f4b9.chunk.js.map": "/capstone03/static/js/787.ebb2f4b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01f3548e.css",
+    "static/js/main.e692f9cb.js"
+  ]
+}
