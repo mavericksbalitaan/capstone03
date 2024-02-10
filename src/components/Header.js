@@ -84,7 +84,7 @@ function Header() {
                   </span>
                 ) : null}
               </div>
-              <button type="button" onClick={searchHandler}>
+              <button type="button" onClick={searchHandler} aria-label="search button">
                 <IconContext.Provider value={{ className: 'ball' }}>
                   <BsSearch />
                 </IconContext.Provider>
@@ -92,17 +92,17 @@ function Header() {
             </>
           ) : (
             <>
-              <button type="button">
+              <button type="button" aria-label="settings button">
                 <IconContext.Provider value={{ className: 'ball' }}>
                   <RiSettings2Fill />
                 </IconContext.Provider>
               </button>
-              <button type="button">
+              <button type="button" aria-label="keyboard button">
                 <IconContext.Provider value={{ className: 'ball' }}>
                   <MdKeyboardVoice />
                 </IconContext.Provider>
               </button>
-              <button type="button" data-testid="searchIcon" onClick={() => setHidden(true)}>
+              <button type="button" data-testid="searchIcon" onClick={() => setHidden(true)} aria-label="search button">
                 <IconContext.Provider value={{ className: 'ball' }}>
                   <BsSearch />
                 </IconContext.Provider>

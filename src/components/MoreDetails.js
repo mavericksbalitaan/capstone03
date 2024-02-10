@@ -53,7 +53,7 @@ function MoreDetails() {
     <>
       {shown ? (
         <section className="background">
-          <button className="closeBtn" type="button" onClick={clickHandler}>
+          <button className="closeBtn" type="button" onClick={clickHandler} aria-label="close button">
             <IconContext.Provider value={{ className: 'closeIcon' }}>
               <RiCloseCircleFill />
             </IconContext.Provider>
